@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <!-- 로딩순서 
+    1.defer
+    2.DOMContentLoaded
+    3.load
+    -->
     <script>
         // only document
         window.addEventListener('DOMContentLoaded', () => {
@@ -18,13 +23,13 @@
         window.addEventListener('load', () => {
             console.log('load')
         })
-        // 로드가 안될때 (페이지가 끝날때)
+        // 로드가 안될때 (페이지가 끝나기 전에)
         window.addEventListener('beforeunload', () => {
-            console.log('load')
+            console.log('beforeunload')
         })
-
+        // 페이지가 끝날 때
         window.addEventListener('unload', () => {
-            console.log('load')
+            console.log('unload')
         })
     </script>
 </body>
