@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+   
+}
+
+.aside {
+    position: absolute;
+    top: 10px;
+    left:47%;
+}
