@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="list">
+        <header class="header">Shopping List</header>
+        <ul class="items">
+            <li class="item_row">
+                <div class="item">
+                    <span class="item_name">Egg</span>
+                    <button onclick="delete_item()" class="item_delete">삭제</button>
+                </div>
+                <div class="item_divider"></div>
+            </li>
+        </ul>
+        <footer class="footer">
+            <input class="footer_input" type="text">
+            <button onclick="add_item()" class="item_input">추가</button>
+        </footer>
+    </section>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
